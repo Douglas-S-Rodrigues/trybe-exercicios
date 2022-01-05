@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <fieldset>
-    <label for="name">Nome</label>
-    <input type="text" name="" id="name" maxlength="40" required>
-    <br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">Curriculum</header>
+    <fieldset>
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" name="" id="name" maxlength="40" required />
+      </div>
+      <br />
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" id='email'maxlength' maxlength="50" required>
+      </div>
 
-    <label for="email">E-mail</label>
-    <input type="text" id='email'maxlength' maxlength="50" required>
-    <br>
+      <br />
+      <div>
+        <label for="cpf">Cpf</label>
+        <input type="text" id="cpf" maxlength="11" required />
+      </div>
 
-    <label for="cpf">Cpf</label>
-    <input type="text" id='cpf' maxlength="11" required>
-    <br>
+      <br />
+      <div>
+        <label for="address">Endereço</label>
+        <input type="text" id="address" maxlength="200" required />
+      </div>
 
-    <label for="address">Endereço</label>
-    <input type="text" id='address' maxlength="200" required>
-    <br> 
+      <br />
 
-    <label for="city">Cidade</label>
-    <input type="" id='city' maxlength="28" required>
-    <br>
+      <div>
+        <label for="city">Cidade</label>
+        <input type="" id="city" maxlength="28" required />
+      </div>
 
-    <label for="state">Estado</label>
-    <select name="" id="state" required>
-      <option value="RS">Rio grande do sul</option>
-      <option value="SP">São Paulo</option>
-      <option value="SC">Santa Catarina</option>
-      <option value="RJ">Rio de Janeiro</option>
-    <br>
+      <br />
 
-    </select>
-    <br>
+      <div>
+        <label for="state">Estado</label>
+        <select name="" id="state" required>
+          <option value="RS">Rio grande do sul</option>
+          <option value="SP">São Paulo</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <br />
+        </select>
+      </div>
 
-    <label for="">Tipo- </label>
-    <label for="type">Casa</label>
-    <input type="radio" name="" id="type" required>
-    <label for="type">Apartamento</label>
-    <input type="radio" name="" id="type" required>
+      <br />
 
+      <label for="">Tipo- </label>
+      <div>
+        <input type="radio" name="tipo" id="ap" required />
+        <label for="ap">Casa</label>
+      </div>
+      <div>
+        <input type="radio" name="tipo" id="house" required />
+        <label for="house">Apartamento</label>
+      </div>
+    </fieldset>
 
-  </fieldset>
+    <fieldset>
+      <label for="Resu">Resumo do curriculo</label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        maxlength="1000"
+        required
+        placeholder="Escreva aqui um resumo sobre o seu currículo."
+      ></textarea>
 
-  <fieldset>
-    <label for="Resu">Resumo do curriculo</label>
-    <textarea name="" id="" cols="30" rows="10" maxlength='1000' required placeholder="Escreva aqui um resumo sobre o seu currículo."></textarea>
+      <br />
 
-    <br>
+      <label for="role">Cargo</label>
+      <input type="text" name="" id="role" />
 
-    <label for="role">Cargo</label>
-    <input type="text" name="" id="">
+      <br />
 
+      <label for="desc-role">Descrição do cargo</label>
+      <textarea
+        name=""
+        id="desc-role"
+        required
+        placeholder="Descreva aqui o seu cargo."
+        cols="30"
+        rows="10"
+        maxlength="500"
+      ></textarea>
 
-  </fieldset>
-  
-</body>
+      <br />
+
+      <div>
+        <label for="startDate">Data de inicio</label>
+        <input
+          type="text"
+          class="input-data"
+          name="startDate"
+          value=""
+          required
+        />
+      </div>
+    </fieldset>
+  </body>
 </html>
