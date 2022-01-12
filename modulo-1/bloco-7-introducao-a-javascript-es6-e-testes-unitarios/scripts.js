@@ -24,3 +24,16 @@ const testingScope = (escopo) => {
   // console.log(`${ifScope} o que estou fazendo aqui ? :O`)
 }
 testingScope();
+
+
+
+let oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+oddsAndEvens.sort((a, b) => {
+  if (a > b) return 1;
+  if (a < b) return -1;
+    return 0;
+});
+// Seu código aqui.
+console.log(`Os numeros ${oddsAndEvens} se encontrar na ordem crescente`);
+// console.log(oddsAndEvens); // será necessário alterar essa linha 😉
