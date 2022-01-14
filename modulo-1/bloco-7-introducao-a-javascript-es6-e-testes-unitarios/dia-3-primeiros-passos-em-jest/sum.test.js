@@ -1,9 +1,11 @@
 const sum = require("./sum");
 
-test("a soma de 4 e 5", () => {
-  expect(sum(4, 5)).toBe(9);
-});
-
-test("a soma de 4 e 5", () => {
-  expect(sum(0, 0)).toBe(0);
+describe("testa para função sum", () => {
+  it("deve retornar o resultado da soma", () => {
+    expect(sum(4, 5)).toBe(9);
+    expect(sum(0, 0)).toBe(0);
+  });
+  it("dispara erro quando for string", () => {
+    expect(() => sum(4, "5")).toThrowError("parameters must be numbers");
+  });
 });
