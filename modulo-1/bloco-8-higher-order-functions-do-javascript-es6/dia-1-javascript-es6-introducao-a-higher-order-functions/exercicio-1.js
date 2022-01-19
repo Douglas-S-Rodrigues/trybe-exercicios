@@ -13,7 +13,7 @@ const dataId = (fullName) => {
   
   const mailEployees = fullName.toLowerCase().split(' ').join('_');
   const email = `${mailEployees}@trybe.com`;
-  return { Nane: fullName, email};
+  return{Name: fullName, email};
 }
 
 console.log(newEmployees(dataId));
