@@ -61,4 +61,29 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+
+
+function authorBornIn1947() {
+  return books.find((book) => book.author.birthYear === 1947).author.name;
+}
+
+// 2 - Retorne o nome do livro de menor nome.
+
+function smallerName() {
+  let nameBook;
+  books.forEach((book) => {
+    book.name.length < nameBook.length ? nameBook = book.name : '';
+  })      
+  return nameBook;
+} 
+
+
+// 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+
+function getNamedBook() {
+ let smallNameBook;
+ books.find((book) => {
+   return book.name.length === 26 
+  })
+}
