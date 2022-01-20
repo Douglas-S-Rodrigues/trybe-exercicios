@@ -84,6 +84,22 @@ function smallerName() {
 function getNamedBook() {
  let smallNameBook;
  books.find((book) => {
-   return book.name.length === 26 
-  })
-}
+   return book.name.length === 26 ;
+  });
+};
+
+// 4 - Ordene os livros por data de lançamento em ordem decrescente.
+
+function booksOrderedByReleaseYearDesc() {
+  return books.sort((book1, book2) => book2.releaseYear - book1.releaseYear);
+};
+
+// 5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  books.every((book) => {
+    book.author.birthYear > 1900 && book.author.birthYear <= 2000;});
+};
+ 
